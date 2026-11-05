@@ -1,0 +1,193 @@
+
+/* NAVBAR */
+
+.medical-navbar {
+  width: 100%;
+  min-height: 75px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 25px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e2eeee;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.035);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+/* Branding */
+
+.navbar-brand-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-ai-icon {
+  width: 46px;
+  height: 46px;
+  background: linear-gradient(135deg, #0d9488, #0f766e);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  font-size: 23px;
+  box-shadow: 0 4px 10px rgba(13, 148, 136, 0.2);
+}
+
+.navbar-brand-text h5 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 750;
+  color: #173b4d;
+}
+
+.navbar-brand-text h5 span {
+  color: #0d9488;
+}
+
+.navbar-brand-text small {
+  color: #8a9aa5;
+  font-size: 11px;
+}
+
+/* Center */
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.ai-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #16866e;
+  font-size: 13px;
+  font-weight: 600;
+  background: #eaf8f3;
+  padding: 9px 15px;
+  border-radius: 30px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #19b783;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(25, 183, 131, 0.12);
+}
+
+.navbar-divider {
+  height: 25px;
+  width: 1px;
+  background: #e5eaee;
+}
+
+.navbar-tagline {
+  color: #81919b;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-tagline i {
+  color: #0d9488;
+  font-size: 16px;
+}
+
+/* Right Actions */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar-notification {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #edf0f2;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #526774;
+  font-size: 19px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.navbar-notification:hover {
+  background: #eaf8f3;
+  color: #0d9488;
+}
+
+/* Logout */
+
+.logout-btn {
+  border: none !important;
+  background: #0d9488 !important;
+  border-radius: 10px !important;
+  padding: 10px 20px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 10px rgba(13, 148, 136, 0.15);
+  transition: 0.2s;
+}
+
+.logout-btn:hover {
+  background: #0f766e !important;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .navbar-center {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .medical-navbar {
+    padding: 12px 14px;
+    min-height: 68px;
+  }
+
+  .navbar-brand-text h5 {
+    font-size: 16px;
+  }
+
+  .navbar-brand-text small {
+    font-size: 9px;
+  }
+
+  .navbar-ai-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .navbar-actions {
+    gap: 8px;
+  }
+
+  .navbar-notification {
+    display: none;
+  }
+
+  .logout-btn {
+    padding: 8px 12px !important;
+    font-size: 12px !important;
+  }
+}
